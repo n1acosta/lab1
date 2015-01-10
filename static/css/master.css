@@ -51,16 +51,61 @@ header{
  * Navigation
  */
 .nav {
-	float: right;
+	position: absolute;
+		top: 5px;
+		right: 10px;
+	box-shadow: 0 0 1px rgba( 255, 255, 255, 0.3);
 	width: 100%;
-	background: #779977;
-	padding: 20px;
-	line-height: 1.5em;
+}
+.nav li{
+	float: right;
+	padding-right: 10px;
+}
+.nav li:first-child{
+	padding-right: 0;
+}
+.nav li a:hover{
+	text-decoration: overline, underline;
 }
 .nav a{
-	color: #fff;
-	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	padding-right:10px;
 }
-.nav a:hover{
-	color: #667777;
+
+ /** Utility
+ */
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
