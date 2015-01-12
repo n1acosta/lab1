@@ -17,6 +17,7 @@ ul {
  */
 body{
 	font-family: Arial, sans-serif;
+	background: #c4cccc;
 }
 p{
 	line-height: 1.5;
@@ -28,34 +29,62 @@ header{
 .logo{
 	width: 300px;
 	max-width:100%;
+	padding: 20px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 	height:auto;
+	background: #779977;
+	border: 5px dotted #fff;
+	border-radius: 100px;
 }
 .container{
 	margin: 0 auto;
 	max-width: 1024px;
 }
-.main-title{
-	color: #667777;
-	padding: 10px 0;
-	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 700;
-	letter-spacing: 2px;
-}
-.main-title .sub{
-	color: #666;
-	font-weight: 400;
-}
 
+/** 
+ * page details
+ */
+h1 {
+	text-align: center;
+	font: 48px "Oleo Script", Arial, sans-serif;
+}
+h3{
+	text-align: center;
+	font: 20px Lato, Arial, sans-serif;
+}
+p{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15em;
+	font: 16px Lato, Arial, sans-serif;
+
+}
 /** 
  * Navigation
  */
 .nav {
 	position: absolute;
 		top: 5px;
-		right: 10px;
-	box-shadow: 0 0 1px rgba( 255, 255, 255, 0.3);
+		right: 5px;
+
+	float: right;
+	background: #779977;
+	padding: 5px;
 	width: 100%;
+}
+.nav a{
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px;
+	display: inline;
+}
+.nav li a:hover{
+	color: #C4CCCC;
 }
 .nav li{
 	float: right;
@@ -64,17 +93,19 @@ header{
 .nav li:first-child{
 	padding-right: 0;
 }
-.nav li a:hover{
-	text-decoration: overline, underline;
-}
-.nav a{
-	text-transform: uppercase;
-	font-size: 11px;
-	padding-right:10px;
+
+ /** 
+  * Footer
+  */
+footer{
+	color: #000;
+	text-align: center;
+	font: 13px Lato, Arial, sans-serif;
 }
 
- /** Utility
- */
+ /** 
+  * Utility
+  */
 .fr {
     float: right;
 }
