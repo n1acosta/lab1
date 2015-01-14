@@ -1,72 +1,171 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/** 
+ * Reset a few browser styles
+ */
+h1, h2 {
+    margin: 0;
+    padding: 0;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+/**
+ * General Styles
+ */
 body{
-	background: url(" "); #000000
+	font-family: Arial, sans-serif;
+	background: #fff;
 }
-
-body, p{
-	font: normal 14px Arial, sans-serif;
+p{
+	line-height: 1.5;
 }
-
-a{
-	color: #4584d3;
+header{
+	padding: 24px 0;
+	margin: 0 0 28px 0;
 }
-
-a:hover{
-	text-decoration: overline;
-}
-
-.container{
-	margin: auto;
-	width: 1024px;
-}
-.content{
+.logo{
+	width: 300px;
+	max-width:100%;
 	padding: 20px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	height:auto;
+	background: #30eeb4;
+	border: 5px dotted #ff8100;
+	border-radius: 100px;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+/** 
+ * page details
+ */
+h1 {
+	text-align: center;
+	font: 48px "Oleo Script", Arial, sans-serif;
+}
+.welcome-box{
+	width: 500px;
+	height: auto;
+	padding: 5px;
+	display: block;
+	border-radius: 10px;
+	border-right: 3px solid #ff8100;
+	border-bottom:3px solid #ff8100;
+	margin-right: auto;
+	margin-left: auto;
+	background: #30eeb4;
+	color: #ff8100;
+}
+h3{
+	text-align: center;
+	font: 20px Lato, Arial, sans-serif;
+}
+p{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30em;
+	font: 16px Lato, Arial, sans-serif;
+}
+.accent{
+	color: #ff8100;
+}
+p a{
+	color: #ff8100;
+	text-decoration: none;
+}
+.projects{
+	text-align: center;
+}
+.projects a{
+	color: #ff8100;
+	text-decoration: none;
+}
+/** 
+ * Navigation
+ */
+.nav {
+	position: absolute;
+		top: 0px;
+		right: 0px;
+
+	float: right;
+	background: #30eeb4;
+	padding: 5px;
+	width: 100%;
+	border-bottom: 3px solid #ff8100;
+	border-top: 3px solid #ff8100;
+}
+.nav a{
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px;
+	display: inline;
+}
+.nav li a:hover{
+	color: #ff8100;
+}
+.nav li{
+	float: right;
+	padding-right: 10px;
+}
+.nav li:first-child{
+	padding-right: 0;
+}
+
+ /** 
+  * Footer
+  */
+footer{
+	color: #000;
+	text-align: center;
+	font: 4px Lato, Arial, sans-serif;
+	margin-top: 150px;
+}
+
+ /** 
+  * Utility
+  */
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
