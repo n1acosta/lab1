@@ -10,6 +10,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
 }
 
 /**
@@ -88,6 +89,8 @@ p a{
 .projects a{
 	color: #ff8100;
 	text-decoration: none;
+=======
+>>>>>>> f8ff378a504737c9941b5ca6869c84d117b69ca8
 }
 /** 
  * Navigation
@@ -97,6 +100,7 @@ p a{
 		top: 0px;
 		right: 0px;
 
+<<<<<<< HEAD
 	float: right;
 	background: #30eeb4;
 	padding: 5px;
@@ -120,8 +124,68 @@ p a{
 }
 .nav li:first-child{
 	padding-right: 0;
+=======
+/**
+ * General Styles
+ */
+body{
+	font-family: Arial, sans-serif;
+	background: #c4cccc;
+}
+p{
+	line-height: 1.5;
+}
+header{
+	padding: 24px 0;
+	margin: 0 0 28px 0;
+}
+.logo{
+	width: 300px;
+	max-width:100%;
+	padding: 20px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	height:auto;
+	background: #779977;
+	border: 5px dotted #fff;
+	border-radius: 100px;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1024px;
 }
 
+/** 
+ * page details
+ */
+h1 {
+	text-align: center;
+	font: 48px "Oleo Script", Arial, sans-serif;
+}
+h3{
+	text-align: center;
+	font: 20px Lato, Arial, sans-serif;
+}
+p{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15em;
+	font: 16px Lato, Arial, sans-serif;
+
+>>>>>>> f8ff378a504737c9941b5ca6869c84d117b69ca8
+}
+/** 
+ * Navigation
+ */
+.nav {
+	position: absolute;
+		top: 5px;
+		right: 5px;
+
+<<<<<<< HEAD
  /** 
   * Footer
   */
@@ -162,6 +226,70 @@ footer{
     clear: both;
 }
 
+=======
+	float: right;
+	background: #779977;
+	padding: 5px;
+	width: 100%;
+}
+.nav a{
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px;
+	display: inline;
+}
+.nav li a:hover{
+	color: #C4CCCC;
+}
+.nav li{
+	float: right;
+	padding-right: 10px;
+}
+.nav li:first-child{
+	padding-right: 0;
+}
+
+ /** 
+  * Footer
+  */
+footer{
+	color: #000;
+	text-align: center;
+	font: 13px Lato, Arial, sans-serif;
+}
+
+ /** 
+  * Utility
+  */
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+>>>>>>> f8ff378a504737c9941b5ca6869c84d117b69ca8
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
